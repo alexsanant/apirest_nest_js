@@ -58,4 +58,11 @@ async findTodo(): Promise<Task[]>{
   return this.taskModel.find({"done": false}).exec();
   }
 
+//Método que realizará hacer una búsqueda por título. Obtendrá una lista de las tareas
+//cuyo título contiene una cadena determinada sin distinguir entre mayúsculas y minúsculas.
+
+async findWithTitle(searchString: string): Promise<Task[]>{
+  return this.taskModel.find({"title": { "$regex": searchString, "$options": "i" }}).exec();
+}
+
 }
