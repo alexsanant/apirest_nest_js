@@ -1,3 +1,5 @@
+//AQUÍ SE CREAN LAS PROPIEDADES QUE TENDRÁ LA BASE DE DATOS Y EL TIPO DE DATO QUE ALMACENARÁN
+
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document } from 'mongoose';
 

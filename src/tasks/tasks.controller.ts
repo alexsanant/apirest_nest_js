@@ -1,3 +1,6 @@
+//CONTROLADOR ENCARGADO DE MANEJAR PETICIONES HTTP
+//LOS MÉTODOS AQUÍ IMPLEMENTADOS LLAMAN A SUS HOMÓNIMOS DEL FICHERO tasks.service.ts
+
 import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
 import { TasksService } from './tasks.service';
 import { CreateTaskDto } from './dto/create-task.dto';
@@ -11,6 +14,21 @@ export class TasksController {
   create(@Body() createTaskDto: CreateTaskDto) {
     return this.tasksService.create(createTaskDto);
   }
+
+
+  @Get('done')
+  findDone() {
+
+    return this.tasksService.findDone();
+
+  }
+
+  @Get('todo')
+  findTodo(){
+
+    return this.tasksService.findTodo();
+  }
+
 
   @Get()
   findAll() {
