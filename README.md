@@ -1,3 +1,9 @@
+<p>Proyecto sencillo de una apiREST en el que a través de peticiones http (GET, POST, PUT, DELETE) podremos obtener, insertar, actualizar y eliminar una serie de tareas sobre una base de datos de tipo NOSQL como es MongoDB.
+El backend del proyecto se realiza sobre un framework de Node.js llamado nest.js
+Y como cliente REST se ha utilizado Advanced REST Client (ARC) 
+  https://install.advancedrestclient.com/install</p>
+  
+
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
 </p>
